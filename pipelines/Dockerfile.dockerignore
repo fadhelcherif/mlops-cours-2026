@@ -1,0 +1,10 @@
+# .dockerignore propre à pipelines/Dockerfile. Liste blanche : on exclut TOUT,
+# puis on ré-inclut ce que l'image copie (ni .venv/, ni data/, ni .git/, ni .env).
+*
+!dataset.yaml
+!params.yaml
+!src/
+!pipelines/requirements.txt
+!pipelines/__init__.py
+!pipelines/stage.py
+**/__pycache__
